@@ -21,4 +21,38 @@ suspected, charges may be filed against me without prior notice.”-Andrew Thoma
 
 1.)-https://www.youtube.com/watch?v=FFm-zaFW_X4- Refreshed my knowledge on change of base formula as it seemed a good avenue for the proof.
 
-2.)-https://stackoverflow.com/questions/6701809/base-of-logarithms-in-time-complexity-algorithms -Used to get an intitution for why the tmight ime complexities might be the same
+2.)-https://stackoverflow.com/questions/6701809/base-of-logarithms-in-time-complexity-algorithms -Used to get an intitution for why the time complexities might be the same
+
+
+# The Proof
+*Goal:* Show that $O(log_2(n))$ = $O(log_5(n))$
+
+Proof:
+
+$[\implies]$ (Proof in the forward direction)
+
+Assume that $Log_5(n) \in O(log_2(n))$.
+
+$\implies$ $\exists$ $c,n_o$ such that,
+
+$Log_5(n) \leq c \cdot log_2(n)$.
+
+Rewriritng with the change of base formula we obtain:
+
+= $\frac{log_{10}(n)}{log_{10}(5)}\leq c.\frac{log_{10}(n)}{log_{10}(2)}$
+
+Let $c=\frac{log_{10}(2)}{log_{10}(5)}$
+
+$\implies \frac{log_{10}(n)}{log_{10}(5)} \leq \frac{log_{10}(2)}{log_{10}(5)} \cdot \frac{log_{10}(n)}{log_{10}(2)}$
+
+$\implies \frac{log_{10}(n)}{log_{10}(5)} \leq \frac{log_{10}(n)}{log_{10}(5)} $
+
+$\implies log_5(n) \leq log_5(n)$
+
+$\implies log_5(n)=log_5(n)$
+
+Thus $O(log_2(n))$ =$O(log_5(n))$
+
+The reverse direction  $[ \Longleftarrow ]$ is trivial to prove and as such I have left it out. (It would just consist of my same steps backwards)
+
+Q.E.D
