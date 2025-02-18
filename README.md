@@ -23,15 +23,15 @@ suspected, charges may be filed against me without prior notice.”-Andrew Thoma
 
 2.)-https://stackoverflow.com/questions/6701809/base-of-logarithms-in-time-complexity-algorithms -Used to get an intitution for why the time complexities might be the same
 
-3.) Git-Hub_repository-log-o-proof-IshitaPatel18- Looked at a completed proof to get an idea of what I was doing wrong, and this ultiamtely inspired my final response
+3.) Git-Hub_repository-log-o-proof-IshitaPatel18- Looked at a completed proof to get an idea of what I was doing wrong, and this ultimatly inspired my final response
 
 
 # The Proof
-*Goal:* Show that $O(log_2(n))$ =$O(log_5(n))$
+*Goal:* Show that $O(log_2(n))$ = $O(log_5(n))$
 
 Proof:
 
-$ [\implies ]$(Proof in the forward direction)
+$[\implies ]$(Proof in the forward direction)
 
 Assume that $f(n) \in O(log_2(n))$.
 
@@ -41,7 +41,7 @@ $f(n) \leq c \cdot log_2(n) \hspace{2mm} \forall \hspace{1mm}n \geq n_o$.  Where
 
 Rewriritng with the change of base formula we obtain:
 
-=$f(n)\leq c.\frac{log_{5}(n)}{log_{5}(2)}$
+= $f(n)\leq c.\frac{log_{5}(n)}{log_{5}(2)}$
 
 
 $\implies f(n) \leq \frac{c}{log_{5}(5)} \cdot \frac{log_{5}(n)}{1}$
@@ -53,7 +53,7 @@ $\implies f(n) \leq c' \cdot log_{5}(n) $
 
 $\implies f(n)= c' \cdot log_5(n)$
 
-Thus $O(log_2(n))$ =$O(log_5(n))$
+Thus $O(log_2(n))$ = $O(log_5(n))$
 
 Q.E.D
 
@@ -61,9 +61,4 @@ The reverse direction  $[ \Longleftarrow ]$ is trivial to prove and as such I ha
 
 Additionally you can prove this by starting with $f(n)\in O(log_5(n))$ and get the same result, I have similarly left this out as the same thing happens as in my work above. The constant absorbs part of your change of base formula and your left with another log of a different base. This goes to show that these log formulas only differ by some scalar.
 
-Thus $O(log_2(n))$ = $O(log_5(n))$
-
-The reverse direction  $[ \Longleftarrow ]$ is trivial to prove and as such I have left it out. (It would just consist of my same steps backwards)
-
-Q.E.D
 
