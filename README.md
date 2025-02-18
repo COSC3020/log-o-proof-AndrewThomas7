@@ -29,30 +29,31 @@ suspected, charges may be filed against me without prior notice.”-Andrew Thoma
 
 Proof:
 
-$[\implies]$ (Proof in the forward direction)
+$[\implies ]$(Proof in the forward direction)
 
 Assume that $Log_5(n) \in O(log_2(n))$.
 
 $\implies$ $\exists$ $c,n_o$ such that,
 
-$Log_5(n) \leq c \cdot log_2(n)$.
+$f(n) \leq c \cdot log_2(n) \hspace{2mm} \forall \hspace{1mm}n \geq n_o$.  Where $f(n)$ is any such function that satisfies $f(n)\in O(log_2(n))$
 
 Rewriritng with the change of base formula we obtain:
 
-= $\frac{log_{10}(n)}{log_{10}(5)}\leq c.\frac{log_{10}(n)}{log_{10}(2)}$
+= $f(n)\leq c.\frac{log_{10}(n)}{log_{10}(2)}$
 
 Let $c=\frac{log_{10}(2)}{log_{10}(5)}$
 
-$\implies \frac{log_{10}(n)}{log_{10}(5)} \leq \frac{log_{10}(2)}{log_{10}(5)} \cdot \frac{log_{10}(n)}{log_{10}(2)}$
+$\implies f(n) \leq \frac{log_{10}(2)}{log_{10}(5)} \cdot \frac{log_{10}(n)}{log_{10}(2)}$
 
-$\implies \frac{log_{10}(n)}{log_{10}(5)} \leq \frac{log_{10}(n)}{log_{10}(5)} $
+$\implies f(n) \leq \frac{log_{10}(n)}{log_{10}(5)} $
 
-$\implies log_5(n) \leq log_5(n)$
+$\implies f(n) \leq log_5(n)$
 
-$\implies log_5(n)=log_5(n)$
+$\implies f(n)=log_5(n)$
 
 Thus $O(log_2(n))$ = $O(log_5(n))$
 
 The reverse direction  $[ \Longleftarrow ]$ is trivial to prove and as such I have left it out. (It would just consist of my same steps backwards)
 
 Q.E.D
+
