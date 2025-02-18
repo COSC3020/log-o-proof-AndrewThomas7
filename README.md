@@ -51,7 +51,7 @@ $\implies log_5(n) \leq log_5(n)$
 
 $\implies log_5(n)=log_5(n)$
 
-Thus $O(log_2(n))$ =$O(log_5(n))$
+Thus $O(log_2(n))$ = $O(log_5(n))$
 
 The reverse direction  $[ \Longleftarrow ]$ is trivial to prove and as such I have left it out. (It would just consist of my same steps backwards)
 
